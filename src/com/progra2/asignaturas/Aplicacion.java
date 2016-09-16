@@ -1,8 +1,8 @@
 package com.progra2.asignaturas;
 
-public class Main {
+public class Aplicacion {
 
     public static void main(String[] args) {
-	// write your code here
+        System.out.println("test");
     }
 }

@@ -8,11 +8,11 @@ public class Asignatura {
     private int notaAsignada = 0;
 
     public Asignatura(String nombreAsignatura, int nota){
-        setNota(nombreAsignatura, nota);
+        asignatura = nombreAsignatura;
+        notaAsignada = nota;
     }
 
-    private void setNota(String nombreAsignatura, int nota){
-        asignatura = nombreAsignatura;
+    private void setNota(int nota){
         notaAsignada = nota;
     }
 

@@ -11,4 +11,20 @@ public class Alumno {
         nombreAlumno = nombre;
         alumnoEdad = edad;
     }
+
+    public String getNombre(){
+        return nombreAlumno;
+    }
+
+    private void setNombre(String nombre){
+        nombreAlumno = nombre;
+    }
+
+    public int getEdad(){
+        return alumnoEdad;
+    }
+
+    private void setEdad(int edad){
+        alumnoEdad = edad;
+    }
 }

@@ -4,23 +4,23 @@ package com.progra2.asignaturas;
  * Created by user on 16/09/2016.
  */
 public class Asignatura {
-    private String asignatura = "";
-    private int notaAsignada = 0;
+    private static String asignatura = "";
+    private static String notaAsignada = "";
 
-    public Asignatura(String nombreAsignatura, int nota){
+    public Asignatura(String nombreAsignatura, String nota){
         asignatura = nombreAsignatura;
         notaAsignada = nota;
     }
 
-    private void setNota(int nota){
+    private void setNota(String nota){
         notaAsignada = nota;
     }
 
-    public int getNota(){
+    public static String getNota(){
         return notaAsignada;
     }
 
-    public String resultado(int nota){
+    public static String resultado(int nota){
         String result = "";
         if (nota >= 60){
             result = "Aprobado";
@@ -31,7 +31,7 @@ public class Asignatura {
         return result;
     }
 
-    public String nombreAsignatura(){
+    public static String nombreAsignatura(){
         return asignatura;
     }
 }

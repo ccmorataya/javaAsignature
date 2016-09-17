@@ -6,6 +6,7 @@ package com.progra2.asignaturas;
 public class Alumno {
     private String nombreAlumno = "";
     private int alumnoEdad = 0;
+    public String[] asignaturas = {};
 
     public Alumno(String nombre, int edad){
         nombreAlumno = nombre;
@@ -26,5 +27,11 @@ public class Alumno {
 
     private void setEdad(int edad){
         alumnoEdad = edad;
+    }
+
+    private void addAsignatura(String nombreAsignatura, String notaAsignatura){
+        new Asignatura(nombreAsignatura, notaAsignatura);
+        Asignatura.nombreAsignatura();
+        Asignatura.getNota();
     }
 }
